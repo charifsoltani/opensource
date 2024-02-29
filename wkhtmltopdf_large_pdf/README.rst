@@ -42,7 +42,12 @@ This module is maintained by the Charif SOLTANI.
    :target: https://www.linkedin.com/in/charif-soltani-b0351811a/
 
 
-Certified Functional Consultant, Technical Project Manager, Lead Developer, and Senior Fullstack Developer, has been utilizing Odoo on a daily basis since 2016.
+* Certified Functional Consultant
+* Technical Project Manager
+* Lead Developer
+* Senior Fullstack Developer
+
+has been utilizing Odoo on a daily basis since 2016.
 
 This module is part of the `OCA/web <https://github.com/charifsoltani/opensource-apps>`_ project on GitHub.
 
