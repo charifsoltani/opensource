@@ -11,6 +11,7 @@
        This app enables you to print a substantial number of documents simultaneously, eliminating the occurrence of the code: -11 error associated with wkhtmltopdf.
        If you continue to encounter this error, you may need to adjust the "base.wkhtmltopdf_max_files" parameter in the system settings to a lower value.
     """,
+    "license": "AGPL-3",
     'depends': ['base'],
     'data': ['data/ir_config_data.xml'],
     'qweb': [],
