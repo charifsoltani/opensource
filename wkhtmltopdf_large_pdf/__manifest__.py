@@ -3,13 +3,9 @@
 
 {
     'name': 'wkhtmltopdf Large PDF',
-    'version': '16.0.1',
-    "author": "Charif SOLTANI",
-    "website": "https://www.linkedin.com/in/soltani-charif-b0351811a/",
     'category': 'Base',
-    'description': """
-       This app enables you to print a substantial number of documents simultaneously, eliminating the occurrence of the code: -11 error associated with wkhtmltopdf.
-       If you continue to encounter this error, you may need to adjust the "base.wkhtmltopdf_max_files" parameter in the system settings to a lower value.
+    'summary': """
+       Print > 1000 document in one-go instead of doing this by batches.
     """,
     "license": "AGPL-3",
     'depends': ['base'],
@@ -17,7 +13,11 @@
     'qweb': [],
     'demo': [],
     'test': [],
-    'application': False,
-    'installable': True,
-    'auto_install': False,
+    'images': [
+        'static/description/cover.png',
+    ],
+    'version': '16.0',
+    "author": "Charif SOLTANI",
+    'support': "soltani.charif@gmail.com",
+    'website': 'www.linkedin.com/in/charif-soltani-b0351811a',
 }
