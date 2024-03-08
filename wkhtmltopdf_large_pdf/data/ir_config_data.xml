@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+
+         <record id="wkhtmltopdf_max_files_key" model="ir.config_parameter">
+            <field name="key">base.wkhtmltopdf_max_files</field>
+            <field name="value">20</field>
+        </record>
+
+    </data>
+</odoo>
