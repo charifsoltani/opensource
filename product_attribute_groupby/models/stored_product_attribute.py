@@ -48,7 +48,7 @@ class StoredProductAttribute(models.Model):
     state = fields.Selection([
         ('draft', 'Not Stored'),
         ('confirm', 'Stored')
-    ], 'State', readonly=1, default='draft')
+    ], 'State', readonly=True, default='draft')
     show_in_filters = fields.Boolean("Show In Search View Suggestion", default=1)
     show_in_group_by = fields.Boolean("Show In Search View Group by", default=1)
     attribute_id = fields.Many2one('product.attribute', 'Product Attribute', required=True)
