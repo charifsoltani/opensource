@@ -19,7 +19,7 @@
                                         <field name="stored_product_attributes_ids" widget="many2many_tags"/>
                                     </div>
                                     <div class="mt8">
-                                        <button name="%(product_attribute_groupby.action_stored_product_attribute)d" icon="fa-arrow-right" type="action" string="Manage stored attributes" class="btn-link"/>
+                                        <button name="%(product.attribute_action)d" icon="fa-arrow-right" type="action" string="Manage stored attributes" class="btn-link"/>
                                     </div>
                                 </div>
                             </div>
