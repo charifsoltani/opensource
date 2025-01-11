@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_stored_product_attribute_user,stored.product.attribute User,model_stored_product_attribute,base.group_user,1,0,0,0
+access_stored_product_attribute_manager,stored.product.attribute Manager,model_stored_product_attribute,base.group_erp_manager,1,1,1,1
