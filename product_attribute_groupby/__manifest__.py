@@ -11,7 +11,7 @@
     'summary': "Analyze your sales data with attribute",
     'depends': [
         'product',
-        # uncomment any module that you're using, don't forget to uncomment it also in the __init__.py file
+        # uncomment any module that you're using, don't forget to uncomment it also in the __init__.py file of module
         'account',
         'sale',
         'stock',
@@ -19,9 +19,9 @@
         # 'stock_enterprise',
     ],
     'data': [
-        'security/ir.model.access.csv',
-        'views/stored_product_attribute_views.xml',
+        # views
         'views/res_config_settings_views.xml',
+        'views/product_attribute_views.xml',
     ],
     'images': [
         'static/description/cover.png',
@@ -30,5 +30,7 @@
     "author": "Charif SOLTANI",
     'support': "soltani.charif@gmail.com",
     'website': 'www.linkedin.com/in/charif-soltani-b0351811a',
+    'application': True,
+    'installable': True,
     'license': 'LGPL-3',
 }

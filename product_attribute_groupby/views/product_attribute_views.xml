@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record id="product_attribute_view_form_search_and_groupby" model="ir.ui.view">
+            <field name="name">product.attribute.form.add.storing.config</field>
+            <field name="model">product.attribute</field>
+            <field name="inherit_id" ref="product.product_attribute_view_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Search &amp; Groupby" invisible="not id">
+                        <div class="d-flex align-items-center align-content-around flex-wrap gap-1 mb-3">
+                            <button name="action_create_fields" string="Store &amp; Compute" type="object" class="oe_highlight" invisible="is_stored"/>
+                            <button name="action_create_fields" string="Re-compute" type="object" class="oe_highlight" invisible="not is_stored"/>
+                            <button name="action_delete_fields" string="Remove" type="object" class="btn-danger" invisible="not is_stored"/>
+                        </div>
+                        <div class="alert alert-info" invisible="is_stored">
+                            Technical name:please don't use special characters or spaces instead use pattern like this:<br/>
+                            - `x_<field name="id" class="oe_inline"/>_color_value`<br/>
+                            - `x_<field name="id" class="oe_inline"/>_size_value`<br/>
+                            Keep the name in english and unique.<br/><br/>
+                            Suggestion for technical name : <field name="technical_name_suggestion" class="oe_inline fst-italic text-muted"/>
+                        </div>
+                        <group>
+                            <field name="is_stored" invisible="1"/>
+                            <field name="technical_name" readonly="is_stored"/>
+                            <field name="show_in_filters"/>
+                            <field name="show_in_group_by"/>
+                        </group>
+                        <group string="Fields">
+                            <field name="field_ids" nolabel="1" colspan="2" readonly="1"/>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -4,11 +4,11 @@
 from odoo import models, api
 
 
-class StoredProductAttribute(models.Model):
-    _inherit = 'stored.product.attribute'
+class ProductAttribute(models.Model):
+    _inherit = 'product.attribute'
 
     def _prepare_field_vals(self, model):
-        vals = super(StoredProductAttribute, self)._prepare_field_vals(model)
+        vals = super(ProductAttribute, self)._prepare_field_vals(model)
         # in product.product the field is computed based on the attributes.
         if model in ['stock.quant', 'stock.move', 'stock.move.line', 'stock.valuation.layer']:
             vals.update({
@@ -19,5 +19,5 @@ class StoredProductAttribute(models.Model):
 
     @api.model
     def _models_list(self):
-        return super(StoredProductAttribute, self)._models_list() + ['stock.quant', 'stock.move', 'stock.move.line', 'stock.valuation.layer']
+        return super(ProductAttribute, self)._models_list() + ['stock.quant', 'stock.move', 'stock.move.line', 'stock.valuation.layer']
 

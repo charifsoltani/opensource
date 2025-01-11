@@ -4,9 +4,10 @@
 from odoo import models, api
 
 
-class StoredProductAttribute(models.Model):
-    _inherit = 'stored.product.attribute'
+class ProductAttribute(models.Model):
+    _inherit = 'product.attribute'
 
     @api.model
     def _models_list(self):
-        return super(StoredProductAttribute, self)._models_list() + ['sale.report']
+        return super(ProductAttribute, self)._models_list() + ['stock.report']
+
